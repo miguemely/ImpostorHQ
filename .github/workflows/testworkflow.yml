@@ -22,7 +22,7 @@ jobs:
     - name: Check my path
       run: pwd
     - name: Install dependencies
-      run: dotnet restore ImpostorHQ.Command/ImpostorHQ.Command.sln
+      run: dotnet restore ImpostorHQ.Command/*/*.csproj
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
